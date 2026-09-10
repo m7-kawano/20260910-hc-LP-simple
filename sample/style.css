@@ -1,0 +1,89 @@
+@charset "utf-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+
+* {
+  box-sizing: border-box;
+}
+
+/* ページ共通 */
+body {
+  color: #333;
+  min-width: 1000px;
+}
+
+.inner {
+  width: 1000px;
+  margin: auto;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  object-fit: cover;
+}
+
+/* ヘッダー */
+header {
+  color: #fff;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: url("https://placehold.jp/1500x1200.png") center / cover no-repeat;
+}
+
+/* セクション共通 */
+section {
+  width: 100%;
+  padding: 80px 0;
+}
+
+section h2 {
+  margin-bottom: 1em;
+}
+
+section p {
+  line-height: 1.8;
+}
+
+/* セクション #first */
+#first {
+  width: 1000px;
+  margin: auto;
+  display: flex;
+  background: url("https://placehold.jp/400x400.png") left center no-repeat;
+}
+
+#first .inner {
+  width: 500px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+#first p {
+  margin: 1em 0;
+}
+
+/* セクション #second, #third 共通 */
+#second .inner,
+#third .inner {
+  text-align: center;
+}
+
+#second p,
+#third p {
+  margin-bottom: 3em;
+}
+
+/* セクション #second */
+#second {
+  background: #f4f4f4;
+  padding-bottom: 0;
+}
+
+footer {
+  background: #eee;
+  text-align: center;
+  padding: 20px 0;
+}
